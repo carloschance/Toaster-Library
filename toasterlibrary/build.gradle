@@ -9,7 +9,7 @@ android {
         maxSdkVersion = 29
         versionName = "1.0.2"
         versionCode = 1
-        groupId = "com.appchance"
+        groupId = "com.carlos"
         artifactId = "core"
         repoOwner = "carloschance"
         repoName = "Toaster-Library"
@@ -58,8 +58,8 @@ android {
             pom.artifactId = artifactId
             pom.version = versionName
             configuration = configurations.deployerJar
-            repository(url: "git:releases://https://github.com/$repoOwner/$repoName" + ".git")
-            snapshotRepository(url: "git:snapshots://https://github.com/$repoOwner/$repoName" + ".git")
+            repository(url: "git:releases://git@github.com:$repoOwner/$repoName" + ".git")
+            snapshotRepository(url: "git:snapshots://git@github.com:$repoOwner/$repoName" + ".git")
             pom.project {
                 name pomName
                 packaging pomPackaging
